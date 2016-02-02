@@ -100,52 +100,76 @@ void setup() {
   pinMode(LED_1, OUTPUT);
   pinMode(LED_2, OUTPUT);
   pinMode(LED_3, OUTPUT);
+  pinMode (SPEAKER, OUTPUT);
 }
 
 void loop()  {
-  // put your main code here, to run repeatedly:
+  // Lightshow
   digitalWrite(LED_2, HIGH);
-  delay(500);
+  tone(SPEAKER, NOTE_GS1);
+  delay(1000);
+  noTone(SPEAKER);
   digitalWrite(LED_2, LOW);
   delay(500);
   digitalWrite(LED_3, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_3, LOW);
+  noTone(SPEAKER); 
   delay(250);
   digitalWrite(LED_3, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_3, LOW);
+  noTone(SPEAKER);
   delay(250);
   digitalWrite(LED_3, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_3, LOW);
+  noTone(SPEAKER);
   delay(600);
   digitalWrite(LED_1, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_1, LOW);
+  noTone(SPEAKER);
   delay(250);
   digitalWrite(LED_1, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_1, LOW);
+  noTone(SPEAKER);
   delay(250);
   digitalWrite(LED_1, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_1, LOW);
+  noTone(SPEAKER);
   delay(600);
   digitalWrite(LED_3, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_3, LOW);
+  noTone(SPEAKER);
   delay(250);
   digitalWrite(LED_3, HIGH);
+  tone(SPEAKER, NOTE_C4);
   delay(250);
   digitalWrite(LED_3, LOW);
+  noTone(SPEAKER);
   delay(250);
   digitalWrite(LED_2, HIGH);
+  tone(SPEAKER, NOTE_B0);
   delay(900);
   digitalWrite(LED_2, LOW);
+  noTone(SPEAKER);
   delay(300);
   digitalWrite(LED_2, HIGH);
+  tone(SPEAKER, NOTE_B0);
   delay(500);
   digitalWrite(LED_2, LOW);
+  noTone(SPEAKER);
   delay(250);
   }
+
